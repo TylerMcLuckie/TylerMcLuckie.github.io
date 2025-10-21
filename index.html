@@ -1,54 +1,250 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    
-    <title>ASSIGNMENT1-PORTFOLIO WEBSITE</title>
-    <link rel="stylesheet"
-          href="style.css">
-    
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tyler Mc Luckie — Portfolio</title>
+  <meta name="description" content="Tyler Mc Luckie — Creative Designer & Developer" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-    
 <body>
-        
 
-        
-<div class="header">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="logo">Tyler Mc Luckie</div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#comments">Comments</a>
+        <a href="#video">Video</a>
+        <a href="#team">Team</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="small">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <div class="nav">
-        <div class="logo">
-                
-                    Tyler Mc Luckie
-                   
-            <div class="slogan">
-                <p>Out of the Box Multimedia Studio</p>
-            </div>
+  <!-- HERO SLIDER -->
+  <section id="hero" class="hero">
+    <div class="hero-slider" id="hero-slider" aria-roledescription="carousel">
+      <!-- Slide 1 -->
+      <div class="slide active" data-index="0" aria-hidden="false">
+        <!-- REPLACE THE URL BELOW with your GIF or image for slide 1 (CREATIVE) -->
+        <div class="slide-bg" style="background-image:url('PLACEHOLDER-CREATIVE-GIF.jpg')"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h1 class="outline-word">CREATIVE</h1>
         </div>
-                
-        <div class="links">
-            <a href="index.html">HOME</a>
-                &vert;
-            <a href="about.html">ABOUT</a>
-                &vert; 
-            <a href="portfolio.html">PORTFOLIO</a>
-                &vert; 
-            <a href="contact.html">CONTACT</a>
-                 &vert;   
-        </div> 
-    </div>
-</div>
-    <div class="center">
-            
-                <img src="letterbox.png">
+      </div>
 
-    </div>
-        
-    <div class="footer">
-          <img src="facebook.png"><img src="instagram.png"><img src="linkedin.png">
-            <p>
-        Tyler Mc Luckie Creative 2018. All Rights Reserved. 
-            </p>
-    </div>      
-       
-    </body>
+      <!-- Slide 2 -->
+      <div class="slide" data-index="1" aria-hidden="true">
+        <!-- REPLACE THE URL BELOW with your GIF or image for slide 2 (DESIGNER) -->
+        <div class="slide-bg" style="background-image:url('/images/dots-1.gif')"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h1 class="outline-word">DESIGNER</h1>
+        </div>
+      </div>
 
+      <!-- Slide 3 -->
+      <div class="slide" data-index="2" aria-hidden="true">
+        <!-- REPLACE THE URL BELOW with your GIF or image for slide 3 (DEVELOPER) -->
+        <div class="slide-bg" style="background-image:url('/images/dots.gif')"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h1 class="outline-word">DEVELOPER</h1>
+        </div>
+      </div>
+
+      <!-- Arrows (fade in on hover) -->
+      <button class="arrow prev" aria-label="Previous slide">&lsaquo;</button>
+      <button class="arrow next" aria-label="Next slide">&rsaquo;</button>
+      <!-- Dots (optional) -->
+      <div class="dots" aria-hidden="true">
+        <button class="dot active" data-to="0"></button>
+        <button class="dot" data-to="1"></button>
+        <button class="dot" data-to="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section dark">
+    <div class="wrap about-grid">
+      <div class="about-image">
+        <!-- Replace with your portrait -->
+        <img src="/images/bird2.png" alt="Tyler Mc Luckie portrait" />
+      </div>
+      <div class="about-text">
+        <h2>Welcome</h2>
+        <p>
+          I'm a creative designer, developer and user experience researcher. I aim to combine my understanding of the user with the beauty of design and the logical perfection of development. My interest in emerging technologies led me to complete a Bachelor of Creative Media Production specialising in Creative Technology and Game Development.
+        </p>
+        <p>
+          I continue to learn daily, pushing my limits to discover unique ways of creating engaging and holistic experiences for the user, applying principles of accessibility, inclusivity and ethics.
+        </p>
+      </div>
+    </div>
+  </section>
+
+ <!-- TOOLS ICONS -->
+<section id="tools" class="section light">
+  <div class="wrap tools-wrap">
+    <h2 class="tools-title">Tools & Technologies</h2>
+    <p class="tools-intro">A selection of software and languages I frequently work with.</p>
+
+    <div class="tools-grid">
+      <!-- Each tool item -->
+      <div class="tool">
+        <img src="PLACEHOLDER-ICON-HTML5.svg" alt="HTML5" />
+        <span>HTML5</span>
+      </div>
+      <div class="tool">
+        <img src="PLACEHOLDER-ICON-CSS3.svg" alt="CSS3" />
+        <span>CSS3</span>
+      </div>
+      <div class="tool">
+        <img src="PLACEHOLDER-ICON-JS.svg" alt="JavaScript" />
+        <span>JavaScript</span>
+      </div>
+      <div class="tool">
+        <img src="PLACEHOLDER-ICON-REACT.svg" alt="React" />
+        <span>React</span>
+      </div>
+      <div class="tool">
+        <img src="PLACEHOLDER-ICON-FIGMA.svg" alt="Figma" />
+        <span>Figma</span>
+      </div>
+      <div class="tool">
+        <img src="PLACEHOLDER-ICON-ADOBE.svg" alt="Adobe Suite" />
+        <span>Adobe Suite</span>
+      </div>
+      <div class="tool">
+        <img src="PLACEHOLDER-ICON-GIT.svg" alt="Git" />
+        <span>Git</span>
+      </div>
+      <div class="tool">
+        <img src="PLACEHOLDER-ICON-PYTHON.svg" alt="Python" />
+        <span>Python</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- TEAM -->
+  <section id="team" class="section dark">
+    <div class="wrap">
+      <div class="section-title">OUR TEAM</div>
+      <div class="people">
+        <div class="person">
+          <img src="PLACEHOLDER-TEAM-1.jpg" alt="">
+          <h4>Robert Simpson</h4>
+          <p class="muted">Developer</p>
+        </div>
+        <div class="person">
+          <img src="PLACEHOLDER-TEAM-2.jpg" alt="">
+          <h4>Michael Sleep</h4>
+          <p class="muted">Founder</p>
+        </div>
+        <div class="person">
+          <img src="PLACEHOLDER-TEAM-3.jpg" alt="">
+          <h4>Bill England</h4>
+          <p class="muted">Developer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- PORTFOLIO (primary grid) -->
+  <section id="portfolio" class="section light">
+    <div class="wrap portfolio-wrap">
+      <aside class="vertical-label">View some of my latest work</aside>
+      <div class="portfolio-grid">
+        <!-- Each card should link to the live project URL. Replace href="#" with the project URL and the image src with the project thumbnail. -->
+        <a class="portfolio-card" href="#" target="_blank" rel="noopener">
+          <img src="PLACEHOLDER-PROJ-1.jpg" alt="Project 1">
+        </a>
+        <a class="portfolio-card" href="#" target="_blank" rel="noopener">
+          <img src="PLACEHOLDER-PROJ-2.jpg" alt="Project 2">
+        </a>
+        <a class="portfolio-card" href="#" target="_blank" rel="noopener">
+          <img src="PLACEHOLDER-PROJ-3.jpg" alt="Project 3">
+        </a>
+        <a class="portfolio-card" href="#" target="_blank" rel="noopener">
+          <img src="PLACEHOLDER-PROJ-4.jpg" alt="Project 4">
+        </a>
+        <a class="portfolio-card" href="#" target="_blank" rel="noopener">
+          <img src="PLACEHOLDER-PROJ-5.jpg" alt="Project 5">
+        </a>
+        <a class="portfolio-card" href="#" target="_blank" rel="noopener">
+          <img src="PLACEHOLDER-PROJ-6.jpg" alt="Project 6">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary animated modules -->
+  <section id="work-rows" class="section dark">
+    <div class="wrap">
+      <div class="row-modules">
+        <a class="module" href="#" target="_blank" rel="noopener">
+          <div class="module-media" style="background-image:url('PLACEHOLDER-SW-1.jpg')"></div>
+          <div class="module-meta">
+            <h3>Game Art — Example</h3>
+            <p>Concept / Visuals</p>
+          </div>
+        </a>
+
+        <a class="module" href="#" target="_blank" rel="noopener">
+          <div class="module-media" style="background-image:url('PLACEHOLDER-SW-2.jpg')"></div>
+          <div class="module-meta">
+            <h3>Interactive Experience</h3>
+            <p>Prototype / UX</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="row-modules">
+        <a class="module" href="#" target="_blank" rel="noopener">
+          <div class="module-media" style="background-image:url('PLACEHOLDER-SW-3.jpg')"></div>
+          <div class="module-meta">
+            <h3>Pineview Ranch</h3>
+            <p>Game / UI</p>
+          </div>
+        </a>
+
+        <a class="module" href="#" target="_blank" rel="noopener">
+          <div class="module-media" style="background-image:url('PLACEHOLDER-SW-4.jpg')"></div>
+          <div class="module-meta">
+            <h3>Ocean Aid Experience</h3>
+            <p>Projection / Mapping</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="section dark contact-section">
+    <div class="wrap contact-inner">
+      <aside class="vertical-contact">Create project</aside>
+      <div class="contact-body">
+        <h2>Create project</h2>
+        <p></p>
+        <p><a class="btn" href="mailto:hello@tylermcluckie.com">Start a project</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">© <span id="year"></span> Tyler Mc Luckie</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
