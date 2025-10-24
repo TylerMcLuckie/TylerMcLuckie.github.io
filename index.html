@@ -11,27 +11,35 @@
 <body>
 
   <!-- Header -->
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <div class="logo">Tyler Mc Luckie</div>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#comments">Comments</a>
-        <a href="#video">Video</a>
-        <a href="#team">Team</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact" class="small">Contact</a>
-      </nav>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="logo">
+      <img src="images/logo.png" alt="Tyler Mc Luckie">
     </div>
-  </header>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#intro">About</a>
+      <a href="#recent-projects">Recent Projects</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact" class="small">Contact</a>
+    </nav>
+  </div>
+</header>
 
   <!-- HERO SLIDER -->
   <section id="hero" class="hero">
     <div class="hero-slider" id="hero-slider" aria-roledescription="carousel">
       <!-- Slide 1 -->
-      <div class="slide active" data-index="0" aria-hidden="false">
-        <!-- REPLACE THE URL BELOW with your GIF or image for slide 1 (CREATIVE) -->
-        <div class="slide-bg" style="background-image:url('PLACEHOLDER-CREATIVE-GIF.jpg')"></div>
+      <div class="slide" data-index="0">
+        <div class="slide-bg">
+          <img src="images/ink.gif" alt="Creative animation">
+        </div>
         <div class="slide-overlay"></div>
         <div class="slide-content">
           <h1 class="outline-word">CREATIVE</h1>
@@ -40,18 +48,24 @@
 
       <!-- Slide 2 -->
       <div class="slide" data-index="1" aria-hidden="true">
-        <!-- REPLACE THE URL BELOW with your GIF or image for slide 2 (DESIGNER) -->
-        <div class="slide-bg" style="background-image:url('/images/dots-1.gif')"></div>
+        <!-- layer 1: dark background handled by .hero -->
+        <!-- layer 2: image/gif container -->
+        <div class="slide-bg">
+          <img src="images/main-birds.png" alt="Designer image" /></div>
+        <!-- layer 2b: subtle overlay -->
         <div class="slide-overlay"></div>
+        <!-- layer 3: text -->
         <div class="slide-content">
           <h1 class="outline-word">DESIGNER</h1>
         </div>
       </div>
 
+
+
       <!-- Slide 3 -->
       <div class="slide" data-index="2" aria-hidden="true">
-        <!-- REPLACE THE URL BELOW with your GIF or image for slide 3 (DEVELOPER) -->
-        <div class="slide-bg" style="background-image:url('/images/dots.gif')"></div>
+        <div class="slide-bg">
+          <img src="images/dots-1.gif" alt="Developer image" /></div>
         <div class="slide-overlay"></div>
         <div class="slide-content">
           <h1 class="outline-word">DEVELOPER</h1>

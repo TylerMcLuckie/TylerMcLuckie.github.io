@@ -1,3 +1,15 @@
+// menu toggle
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.site-nav');
+
+toggle.addEventListener('click', () => {
+  toggle.classList.toggle('active');
+  nav.classList.toggle('open');
+});
+
+
+
+
 // Simple slider: autoplay + arrows + dots + hover pause + touch
 (function(){
   const slider = document.getElementById('hero-slider');
