@@ -4,277 +4,303 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Tyler Mc Luckie — Portfolio</title>
-  <meta name="description" content="Tyler Mc Luckie — Creative Designer & Developer" />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta name="description" content="Tyler Mc Luckie — Creative Web & UX / Developer / Data analytics" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header" role="banner">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top"><img src="images/Cube-logo.png" alt="Tyler Mc Luckie" /></a>
 
-  <!-- Header -->
-<header class="site-header">
-  <div class="wrap header-inner">
-    <div class="logo">
-      <img src="images/logo.png" alt="Tyler Mc Luckie">
-    </div>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
 
-    <button class="menu-toggle" aria-label="Toggle menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
+    <nav class="site-nav" role="navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact" class="cta">Contact</a>
 
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="#intro">About</a>
-      <a href="#recent-projects">Recent Projects</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact" class="small">Contact</a>
+      <div class="social-nav">
+        <a href="https://www.linkedin.com/in/tylermcluckie" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.761 0 5-2.238 5-5v-14c0-2.761-2.239-5-5-5zm-11.769 20h-2.732v-8.978h2.732v8.978zm-1.366-10.208c-.875 0-1.584-.709-1.584-1.584s.709-1.584 1.584-1.584 1.584.709 1.584 1.584-.709 1.584-1.584 1.584zm12.135 10.208h-2.732v-4.421c0-1.054-.02-2.413-1.471-2.413-1.472 0-1.698 1.149-1.698 2.335v4.499h-2.732v-8.978h2.622v1.228h.037c.366-.692 1.259-1.421 2.591-1.421 2.771 0 3.282 1.824 3.282 4.196v4.975z"/>
+          </svg>
+        </a>
+
+        <a href="https://vimeo.com/tylermcluckie" target="_blank" aria-label="Vimeo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22.522 6.189c-.098 2.142-1.588 5.069-4.474 8.79-2.983 3.841-5.5 5.761-7.548 5.761-1.273 0-2.35-1.173-3.229-3.521l-1.755-6.442c-.651-2.36-1.346-3.541-2.086-3.541-.163 0-.735.347-1.713 1.043l-1.026-1.338c1.08-.95 2.147-1.897 3.206-2.847 1.449-1.26 2.533-1.921 3.246-1.983 1.705-.163 2.757 1.002 3.154 3.497.426 2.693.721 4.373.882 5.04.492 2.236 1.033 3.353 1.626 3.353.458 0 1.149-.729 2.07-2.188.921-1.46 1.414-2.574 1.481-3.344.132-1.26-.363-1.888-1.481-1.888-.528 0-1.072.118-1.635.352 1.087-3.564 3.166-5.294 6.237-5.187 2.272.068 3.338 1.53 3.181 4.379z"/>
+          </svg>
+        </a>
+      </div>
     </nav>
+
+  </header>
+
+ <section id="hero" class="hero">
+  <div class="wrap hero-grid">
+    
+    <!-- LEFT: Text -->
+    <div class="hero-copy">
+      <h1 class="hero-title">Creative Designer<br><span class="accent">Developer & Data Thinker</span></h1>
+      <p class="hero-sub">Crafting digital experiences that balance creativity, technology, and measurable impact.</p>
+      
+      <div class="hero-cta-wrap">
+        <a href="#work" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Layered Assets -->
+    <div class="hero-layers" id="hero-layers">
+      <!-- replace each with your own image asset -->
+      <img src="images/work-station.png" class="layer layer-1" alt="">
+      <img src="images/design-tools.png" class="layer layer-2" alt="">
+      <img src="images/game-controller.png" class="layer layer-3" alt="">
+      <img src="images/@.png" class="layer layer-4" alt="">
+      <img src="assets/layers/layer5.png" class="layer layer-5" alt="">
+    </div>
+
   </div>
-</header>
+</section>
 
-  <!-- HERO SLIDER -->
-  <section id="hero" class="hero">
-    <div class="hero-slider" id="hero-slider" aria-roledescription="carousel">
-      <!-- Slide 1 -->
-      <div class="slide" data-index="0">
-        <div class="slide-bg">
-          <img src="images/ink.gif" alt="Creative animation">
+    <!-- ABOUT -->
+    <section id="about" class="section wrap">
+      <div class="about-grid">
+        <div class="portrait">
+          <img src="images/Cube-logo.png" alt="Portrait">
         </div>
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-          <h1 class="outline-word">CREATIVE</h1>
-        </div>
-      </div>
+        <div class="about-copy">
+          <p>Welcome, I’m Tyler <br>
 
-      <!-- Slide 2 -->
-      <div class="slide" data-index="1" aria-hidden="true">
-        <!-- layer 1: dark background handled by .hero -->
-        <!-- layer 2: image/gif container -->
-        <div class="slide-bg">
-          <img src="images/main-birds.png" alt="Designer image" /></div>
-        <!-- layer 2b: subtle overlay -->
-        <div class="slide-overlay"></div>
-        <!-- layer 3: text -->
-        <div class="slide-content">
-          <h1 class="outline-word">DESIGNER</h1>
+            <p>Designer. Developer. Data Thinker.</p>
+
+            I create digital experiences that balance creativity with measurable performance, where design, data, and technology work together with purpose. With a background in Creative Technology and Game Development, I approach projects with both a creative eye and a systems mindset, blending design thinking, technical craft, and data insight.
+
+            Over the past few years, my focus has been on design and development, along with SEO, SEM, and analytics. I enjoy creating websites that not only look and feel right but also perform, grounded in data, usability, and genuine audience insight.
+
+            I regularly work with AI tools and data analytics to improve efficiency, uncover trends, and inform design decisions. My current goal is to deepen my skills in business intelligence, strengthening the link between creative work and measurable outcomes.
+
+            I see the digital world as an evolving ecosystem, where creativity and data inform one another, and where meaningful design is backed by understanding, adaptability, and purpose.</p>
+          <p>Skills: Designer · Developer · HTML/CSS · UX & Interaction Design · SEO/SEM · Data Analytics · AI Tools · Reporting & Insights · Unity Prototyping · Motion & Microinteractions</p>
         </div>
       </div>
+      <section class="process-section">
+  <div class="wrap">
+    <div class="process-grid">
 
-
-
-      <!-- Slide 3 -->
-      <div class="slide" data-index="2" aria-hidden="true">
-        <div class="slide-bg">
-          <img src="images/dots-1.gif" alt="Developer image" /></div>
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-          <h1 class="outline-word">DEVELOPER</h1>
-        </div>
+      <div class="process-tile">
+        <h3>DISCOVER</h3>
+        <ul>
+          <li>Research</li>
+          <li>Ideation</li>
+          <li>Strategy</li>
+        </ul>
       </div>
 
-      <!-- Arrows (fade in on hover) -->
-      <button class="arrow prev" aria-label="Previous slide">&lsaquo;</button>
-      <button class="arrow next" aria-label="Next slide">&rsaquo;</button>
-      <!-- Dots (optional) -->
-      <div class="dots" aria-hidden="true">
-        <button class="dot active" data-to="0"></button>
-        <button class="dot" data-to="1"></button>
-        <button class="dot" data-to="2"></button>
+      <div class="process-tile">
+        <h3>DESIGN</h3>
+        <ul>
+          <li>UI / UX</li>
+          <li>Prototyping</li>
+          <li>Visual Design</li>
+          <li>Animatics</li>
+        </ul>
       </div>
+
+      <div class="process-tile">
+        <h3>DEPLOY</h3>
+        <ul>
+          <li>Development</li>
+          <li>Testing</li>
+          <li>UX Research</li>
+          <li>Amend</li>
+        </ul>
+      </div>
+
     </div>
-  </section>
+  </div>
+    <!-- TOOLS & TECH ICONS -->
+<div class="tools-icons">
+  <img src="images/html-icon.jpg" alt="HTML5">
+  <img src="images/css-logo.jpg" alt="CSS3">
+  <img src="images/css-logo.jpg" alt="WordPress">
+  <img src="images/shopify.jpg" alt="Shopify">
+  <img src="images/adobesuite-icon.jpg" alt="Adobe Suite">
+  <img src="images/github.jpg" alt="Git">
+  <img src="images/VS-logo.jpg" alt="VS Code">
+  <img src="images/Unity.jpg" alt="Unity">
+  <img src="assets/icons/python.svg" alt="Python">
+</div>
 
-  <!-- ABOUT -->
-  <section id="about" class="section light">
-    <div class="wrap about-grid">
-      <div class="about-image">
-        <!-- Replace with your portrait -->
-        <img src="/images/handoutofbox.png" alt="Tyler Mc Luckie portrait" />
-      </div>
-      <div class="about-text">
-        <h2>Welcome</h2>
-        <p>
-          I'm a creative designer, developer and user experience researcher. I aim to combine my understanding of the user with the beauty of design and the logical perfection of development. My interest in emerging technologies led me to complete a Bachelor of Creative Media Production specialising in Creative Technology and Game Development.
-        </p>
-        <p>
-          I continue to learn daily, pushing my limits to discover unique ways of creating engaging and holistic experiences for the user, applying principles of accessibility, inclusivity and ethics.
-        </p>
-      </div>
+
+
+</section>
+
+
+
+    </section>
+
+
+
+<!-- FEATURED PROJECTS SLIDER -->
+<section id="featured-projects" class="featured-projects">
+  <div class="wrap section-header">
+    <h2>Selected Work</h2>
+    <p>A few recent projects and digital builds.</p>
+  </div>
+
+  <div class="slider-container">
+    <button class="slider-btn prev" aria-label="Previous">&#10094;</button>
+    <div class="slider" id="project-slider">
+
+      <!-- Each slide -->
+      <a href="https://project1.com" class="slide" target="_blank">
+        <img src="images/Trust-Property.jpg" alt="Project 1">
+        <div class="slide-overlay">
+          <h3>Project Title</h3>
+          <p>Client / Category</p>
+        </div>
+      </a>
+
+      <a href="https://project2.com" class="slide" target="_blank">
+        <img src="images/Ghost-Diving.jpg" alt="Project 2">
+        <div class="slide-overlay">
+          <h3>Project Title</h3>
+          <p>Client / Category</p>
+        </div>
+      </a>
+
+      <a href="https://project3.com" class="slide" target="_blank">
+        <img src="images/Crown-Bathrooms.jpg" alt="Project 3">
+        <div class="slide-overlay">
+          <h3>Project Title</h3>
+          <p>Client / Category</p>
+        </div>
+      </a>
+
+      <a href="https://project4.com" class="slide" target="_blank">
+        <img src="images/matol.jpg" alt="Project 4">
+        <div class="slide-overlay">
+          <h3>Project Title</h3>
+          <p>Client / Category</p>
+        </div>
+      </a>
+
     </div>
-  </section>
+    <button class="slider-btn next" aria-label="Next">&#10095;</button>
+  </div>
+</section>
 
- <!-- TOOLS ICONS -->
-<section id="tools" class="section light">
-  <div class="wrap tools-wrap">
-    <h2 class="tools-title">Tools & Technologies</h2>
-    <p class="tools-intro">A selection of software and languages I frequently work with.</p>
 
-    <div class="tools-grid">
-      <!-- Each tool item -->
-      <div class="tool">
-        <img src="images/" alt="HTML5" />
-        <span>HTML5</span>
-      </div>
-      <div class="tool">
-        <img src="images/css-logoB.png" alt="CSS3" />
-        <span>CSS3</span>
-      </div>
-      <div class="tool">
-        <img src="images/html-icon.jpg" alt="JavaScript" />
-        <span>Wordpress/span>
-      </div>
-      <div class="tool">
-        <img src="images/css-logo.jpg" alt="React" />
-        <span>Shopify</span>
-      </div>
-      <div class="tool">
-        <img src="" alt="Figma" />
-        <span>Figma</span>
-      </div>
-      <div class="tool">
-        <img src="images/adobesuite-icon.jpg" alt="Adobe Suite" />
-        <span>Adobe Suite</span>
-      </div>
-      <div class="tool">
-        <img src="images/githubB.png" alt="Git" />
-        <span>Git</span>
-      </div>
-      <div class="tool">
-        <img src="PLACEHOLDER-ICON-PYTHON.svg" alt="Python" />
-        <span>Python</span>
-      </div>
+
+<!-- CREATIVE LAB / OTHER PROJECTS -->
+<section id="creative-projects" class="creative-projects">
+  <div class="wrap">
+    <div class="section-header">
+      <h2>Other Projects</h2>
+      <p>Games, creative coding experiments, and interactive digital art.</p>
+    </div>
+
+    <div class="creative-grid">
+      <!-- Row 1: Portrait | Landscape -->
+      <article class="creative-card portrait" data-delay="0">
+        <img src="images/neocense2.jpg" alt="Retro Runner">
+        <div class="creative-info">
+          <h3>Retro Runner</h3>
+          <p>A pixel-art endless runner built in Unity.</p>
+          <a href="https://example.com" target="_blank" class="link">View Project →</a>
+        </div>
+      </article>
+
+      <article class="creative-card landscape" data-delay="120">
+        <img src="images/pingPong.jpg" alt="Particle Flow">
+        <div class="creative-info">
+          <h3>Particle Flow</h3>
+          <p>Generative art using p5.js and noise fields.</p>
+          <a href="https://example.com" target="_blank" class="link">View Project →</a>
+        </div>
+      </article>
+
+      <!-- Row 2: Landscape | Portrait -->
+      <article class="creative-card landscape" data-delay="0">
+        <img src="images/vr-scene-landscape.jpg" alt="Eco VR">
+        <div class="creative-info">
+          <h3>Eco VR</h3>
+          <p>Immersive conservation experience in VR.</p>
+          <a href="https://example.com" target="_blank" class="link">View Project →</a>
+        </div>
+      </article>
+
+      <article class="creative-card portrait" data-delay="120">
+        <img src="images/pineMelon.gif" alt="Neon Bloom">
+        <div class="creative-info">
+          <h3>Neon Bloom</h3>
+          <p>Reactive LED installation coded in Arduino.</p>
+          <a href="https://example.com" target="_blank" class="link">View Project →</a>
+        </div>
+      </article>
+
+      <!-- Row 3: Portrait | Landscape -->
+      <article class="creative-card portrait" data-delay="0">
+        <img src="images/oneWayWellington.jpg" alt="Sound Grid">
+        <div class="creative-info">
+          <h3>Sound Grid</h3>
+          <p>Audio-visual system syncing music and light.</p>
+          <a href="https://example.com" target="_blank" class="link">View Project →</a>
+        </div>
+      </article>
+
+      <article class="creative-card landscape" data-delay="120">
+        <img src="images/pineMelon.gif" alt="3D Data Canvas">
+        <div class="creative-info">
+          <h3>3D Data Canvas</h3>
+          <p>WebGL visualization linking environment & data.</p>
+          <a href="https://example.com" target="_blank" class="link">View Project →</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-  <!-- SERVICES -->
-  <section id="team" class="section dark">
-    <div class="wrap">
-      <div class="section-title">SERVICES</div>
-      <div class="people">
-        <div class="person">
-          <h4>DISCOVER</h4>
-          <p class="muted">Research<br>Ideation<br>Strategy</p>
-        </div>
-        <div class="person">
-          <h4>DESIGN</h4>
-          <p class="muted">UI/UX <br> Prototyping <br> Visual Design <br> Animatics</p>
-        </div>
-        <div class="person">
-          
-          <h4>DEPLOY</h4>
-          <p class="muted">Development <br>Testing <br>UX Research <br>Amend
-</p>
-        </div>
-      </div>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="wrap contact-inner">
+  <div class="contact-text">
+    <h3>Let’s build something</h3>
+    <p>
+      Available for freelance & contract work — 
+      <a href="mailto:hello@tylermcluckie.com">hello@tylermcluckie.com</a>
+    </p>
+
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/tylermcluckie" target="_blank" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.761 0 5-2.238 5-5v-14c0-2.761-2.239-5-5-5zm-11.769 20h-2.732v-8.978h2.732v8.978zm-1.366-10.208c-.875 0-1.584-.709-1.584-1.584s.709-1.584 1.584-1.584 1.584.709 1.584 1.584-.709 1.584-1.584 1.584zm12.135 10.208h-2.732v-4.421c0-1.054-.02-2.413-1.471-2.413-1.472 0-1.698 1.149-1.698 2.335v4.499h-2.732v-8.978h2.622v1.228h.037c.366-.692 1.259-1.421 2.591-1.421 2.771 0 3.282 1.824 3.282 4.196v4.975z"/></svg>
+      </a>
+
+      <a href="https://vimeo.com/tylermcluckie" target="_blank" aria-label="Vimeo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M22.522 6.189c-.098 2.142-1.588 5.069-4.474 8.79-2.983 3.841-5.5 5.761-7.548 5.761-1.273 0-2.35-1.173-3.229-3.521l-1.755-6.442c-.651-2.36-1.346-3.541-2.086-3.541-.163 0-.735.347-1.713 1.043l-1.026-1.338c1.08-.95 2.147-1.897 3.206-2.847 1.449-1.26 2.533-1.921 3.246-1.983 1.705-.163 2.757 1.002 3.154 3.497.426 2.693.721 4.373.882 5.04.492 2.236 1.033 3.353 1.626 3.353.458 0 1.149-.729 2.07-2.188.921-1.46 1.414-2.574 1.481-3.344.132-1.26-.363-1.888-1.481-1.888-.528 0-1.072.118-1.635.352 1.087-3.564 3.166-5.294 6.237-5.187 2.272.068 3.338 1.53 3.181 4.379z"/></svg>
+      </a>
     </div>
-  </section>
-
-
-
-  <!-- PORTFOLIO (primary grid) -->
-  <section id="portfolio" class="section light">
-    <div class="wrap portfolio-wrap">
-      <aside class="vertical-label">View some of my latest work</aside>
-      <div class="portfolio-grid">
-        <!-- Each card should link to the live project URL. Replace href="#" with the project URL and the image src with the project thumbnail. -->
-        <a class="portfolio-card" href="#" target="_blank" rel="noopener">
-          <img src="images/Trust-Property.jpg" alt="Project 1">
-        </a>
-        <a class="portfolio-card" href="#" target="_blank" rel="noopener">
-          <img src="images/CrowBathrooms.jpg" alt="Project 2">
-        </a>
-        <a class="portfolio-card" href="#" target="_blank" rel="noopener">
-          <img src="images/Ghost-Diving.jpg" alt="Project 3">
-        </a>
-        <a class="portfolio-card" href="#" target="_blank" rel="noopener">
-          <img src="images/Uno-Kitchens.jpg" alt="Project 4">
-        </a>
-        <a class="portfolio-card" href="#" target="_blank" rel="noopener">
-          <img src="images/St.Marys-Kindergarten.jpg" alt="Project 5">
-        </a>
-        <a class="portfolio-card" href="#" target="_blank" rel="noopener">
-          <img src="images/matol.jpg" alt="Project 6">
-        </a>
-      </div>
+  </div>
+    <div class="contact-layers" id="contact-layers">
+      <div class="layer layer-1"><img src="images/work-station-footer.png" alt=""></div>
+      <div class="layer layer-2"><img src="images/footer-@.png" alt=""></div>
+      <div class="layer layer-3"><img src="images" alt=""></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Secondary animated modules -->
-  <section id="work-rows" class="section dark">
-    <div class="wrap">
-      <div class="row-modules">
-        <a class="module" href="#" target="_blank" rel="noopener">
-          <div class="module-media" style="background-image:url('images/neocense2.jpg')"></div>
-          <div class="module-meta">
-            <h3>Game Art — Example</h3>
-            <p>Concept / Visuals</p>
-          </div>
-        </a>
-
-        <a class="module" href="#" target="_blank" rel="noopener">
-          <div class="module-media" style="background-image:url('images/pingPong.jpg')"></div>
-          <div class="module-meta">
-            <h3>Interactive Experience</h3>
-            <p>Prototype / UX</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="row-modules">
-        <a class="module" href="#" target="_blank" rel="noopener">
-          <div class="module-media" style="background-image:url('images/pineMelon.gif')"></div>
-          <div class="module-meta">
-            <h3>Pineview Ranch</h3>
-            <p>Game / UI</p>
-          </div>
-        </a>
-
-        <a class="module" href="#" target="_blank" rel="noopener">
-          <div class="module-media" style="background-image:url('images/oceanaid.jpg')"></div>
-          <div class="module-meta">
-            <h3>Ocean Aid Experience</h3>
-            <p>Projection / Mapping</p>
-          </div>
-        </a>
-      </div>
-      <div class="row-modules">
-        <a class="module" href="#" target="_blank" rel="noopener">
-          <div class="module-media" style="background-image:url('images/oneWayWellington.jpg')"></div>
-          <div class="module-meta">
-            <h3>One Way to Wellington</h3>
-            <p>Game / UI</p>
-          </div>
-        </a>
-
-        <a class="module" href="#" target="_blank" rel="noopener">
-          <div class="module-media" style="background-image:url('images/Avatar_Generator.png')"></div>
-          <div class="module-meta">
-            <h3>Avatar Generator</h3>
-            <p>Avatar Generator </p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+<footer class="site-footer wrap">
+  © <span id="year"></span> Tyler Mc Luckie
+</footer>
 
 
-  <!-- CONTACT -->
-  <section id="contact" class="section dark contact-section">
-    <div class="wrap contact-inner">
-      <aside class="vertical-contact">Create project</aside>
-      <div class="contact-body">
-        <h2>Create project</h2>
-        <p>Ellum dolorem fusiat voluntas sariatur.</p>
-        <p><a class="btn" href="mailto:hello@tylermcluckie.com">Start a project</a></p>
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="wrap">© <span id="year"></span> Tyler Mc Luckie</div>
-  </footer>
-
-  <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
