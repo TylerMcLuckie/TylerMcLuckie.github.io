@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio Projects</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Archivo", sans-serif;
+    background-color: #050505;
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 120px 10%;
+    background-color: #050505;
+  }
+
+  h2.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 70px;
+    letter-spacing: 2px;
+  }
+
+  .project-columns {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+  }
+
+  .project-block {
+    background-color: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transform: translateY(50%);
+    opacity: 0;
+    transition: transform 1s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 1s ease;
+  }
+
+  .project-block.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .project-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .project-block h3 {
+    font-size: 1.3rem;
+    padding: 20px 20px 0;
+    margin: 0;
+  }
+
+  .project-block p {
+    font-size: 0.95rem;
+    color: #ccc;
+    padding: 10px 20px 20px;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    h2.section-title {
+      font-size: 2rem;
+    }
+    .project-columns {
+      flex-direction: column;
+      gap: 60px;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="project-columns">
+    <div class="column">
+      <div class="project-block">
+        <img src="https://picsum.photos/500/400?random=11" alt="Project 1">
+        <h3>Creative Works</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project-block">
+        <img src="https://picsum.photos/500/600?random=12" alt="Project 2">
+        <h3>Website Designs</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      <div class="project-block">
+        <img src="https://picsum.photos/500/500?random=13" alt="Project 3">
+        <h3>Product Mockups</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="project-block">
+        <img src="https://picsum.photos/500/550?random=14" alt="Project 4">
+        <h3>New Graphics</h3>
+        <p>Velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="project-block">
+        <img src="https://picsum.photos/500/350?random=15" alt="Project 5">
+        <h3>Office Walls</h3>
+        <p>Excepteur sint occaecat cupidatat non proident.</p>
+      </div>
+      <div class="project-block">
+        <img src="https://picsum.photos/500/450?random=16" alt="Project 6">
+        <h3>Other Designs</h3>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Slide-up effect triggered when middle of element hits middle of viewport
+  const blocks = document.querySelectorAll('.project-block');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5 // middle of element in middle of viewport
+  });
+
+  blocks.forEach(block => observer.observe(block));
+</script>
+
+</body>
+</html>
