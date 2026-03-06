@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tyler Mc Luckie — Portfolio</title>
+  <title>Tyler Mc Luckie — NTM Portfolio</title>
   <meta name="description" content="Tyler Mc Luckie — Creative Web & UX / Developer / Data analytics" />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -13,14 +13,15 @@
     <div class="wrap header-inner">
       <a class="logo" href="#top"><img src="images/Cube-logo.png" alt="Tyler Mc Luckie" /></a>
 
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      <button class="menu-toggle" aria-expanded="false">
+        <span class="menu-text">Menu</span>
+        <span class="menu-arrow">→</span>
       </button>
 
     <nav class="site-nav" role="navigation">
       <a href="#about">About</a>
       <a href="#work">Work</a>
-      <a href="#studio">Studio</a>
+      <a href="#projects">Creative Lab</a>
       <a href="#contact" class="cta">Contact</a>
 
       <div class="social-nav">
@@ -123,8 +124,8 @@
 
     </div>
   </div>
-    <!-- TOOLS & TECH ICONS -->
-<div class="tools-icons">
+<!-- TOOLS & TECH ICONS -->
+<!--<div class="tools-icons">
   <img src="images/html-icon.jpg" alt="HTML5">
   <img src="images/css-logo.jpg" alt="CSS3">
   <img src="images/css-logo.jpg" alt="WordPress">
@@ -134,134 +135,155 @@
   <img src="images/VS-logo.jpg" alt="VS Code">
   <img src="images/Unity.jpg" alt="Unity">
   <img src="assets/icons/python.svg" alt="Python">
-</div>
-
+</div>-->     
 
 
 </section>
-
-
-
     </section>
 
 
-
-<!-- FEATURED PROJECTS SLIDER -->
-<section id="featured-projects" class="featured-projects">
-  <div class="wrap section-header">
-    <h2>Selected Work</h2>
-    <p>A few recent projects and digital builds.</p>
+<!-- PORTFOLIO (primary grid) -->
+<section id="work" class="portfolio-section">
+  <div class="portfolio-header">
+    <h2>View some of my latest work</h2>
+    <div class="portfolio-divider"></div>
   </div>
 
-  <div class="slider-container">
-    <button class="slider-btn prev" aria-label="Previous">&#10094;</button>
-    <div class="slider" id="project-slider">
+  <div class="portfolio-grid">
+     <a class="portfolio-card" href="https://www.ktpsychiatry.co.nz/" target="_blank" rel="noopener">
+    <img src="images/Dr.KangTanNTM.jpg" alt="Dr.KangTan">
 
-      <!-- Each slide -->
-      <a href="https://project1.com" class="slide" target="_blank">
-        <img src="images/Trust-Property.jpg" alt="Project 1">
-        <div class="slide-overlay">
-          <h3>Project Title</h3>
-          <p>Client / Category</p>
-        </div>
-      </a>
-
-      <a href="https://project2.com" class="slide" target="_blank">
-        <img src="images/Ghost-Diving.jpg" alt="Project 2">
-        <div class="slide-overlay">
-          <h3>Project Title</h3>
-          <p>Client / Category</p>
-        </div>
-      </a>
-
-      <a href="https://project3.com" class="slide" target="_blank">
-        <img src="images/Crown-Bathrooms.jpg" alt="Project 3">
-        <div class="slide-overlay">
-          <h3>Project Title</h3>
-          <p>Client / Category</p>
-        </div>
-      </a>
-
-      <a href="https://project4.com" class="slide" target="_blank">
-        <img src="images/matol.jpg" alt="Project 4">
-        <div class="slide-overlay">
-          <h3>Project Title</h3>
-          <p>Client / Category</p>
-        </div>
-      </a>
-
+    <div class="portfolio-overlay">
+      <span class="portfolio-title">Dr.Kang Tan</span>
+      <svg class="link-icon" viewBox="0 0 24 24">
+        <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
+      </svg>
     </div>
-    <button class="slider-btn next" aria-label="Next">&#10095;</button>
+  </a>
+
+  <a class="portfolio-card" href="https://capitalofficesupplies.co.nz/" target="_blank" rel="noopener">
+      <img src="images/Capital-officeNTM.jpg" alt="Capital Office Supplies">
+    <div class="portfolio-overlay">
+      <span class="portfolio-title">Capital Office Supplies</span>
+      <svg class="link-icon" viewBox="0 0 24 24">
+        <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
+      </svg>
+    </div>
+  </a>
+
+  <a class="portfolio-card" href="https://www.yourbooks.co.nz/" target="_blank" rel="noopener">
+    <img src="images/YoubooksNTM.jpg" alt="Crown Bathrooms">
+
+    <div class="portfolio-overlay">
+      <span class="portfolio-title">Yourbooks</span>
+      <svg class="link-icon" viewBox="0 0 24 24">
+        <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
+      </svg>
+    </div>
+  </a>
+  <a class="portfolio-card" href="https://www.crownbathrooms.co.nz/" target="_blank" rel="noopener">
+    <img src="images/CrowBathrooms.jpg" alt="Crown Bathrooms">
+
+    <div class="portfolio-overlay">
+      <span class="portfolio-title">Crown Bathrooms</span>
+      <svg class="link-icon" viewBox="0 0 24 24">
+        <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
+      </svg>
+    </div>
+  </a>
+  <a class="portfolio-card" href="https://www.rwroofing.co.nz/" target="_blank" rel="noopener">
+    <img src="images/RWRoofingNTM.jpg" alt="R W Roofing">
+
+    <div class="portfolio-overlay">
+      <span class="portfolio-title">R W Roofing</span>
+      <svg class="link-icon" viewBox="0 0 24 24">
+        <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
+      </svg>
+    </div>
+  </a>
+
+  <a class="portfolio-card" href="https://www.ghostdivingnz.org/" target="_blank" rel="noopener">
+    <img src="images/Ghost-Diving.jpg" alt="Ghost-Diving">
+
+    <div class="portfolio-overlay">
+      <span class="portfolio-title">Ghost Diving</span>
+      <svg class="link-icon" viewBox="0 0 24 24">
+        <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
+      </svg>
+    </div>
+  </a>
+  <a class="portfolio-card" href="https://www.thepaintershub.co.nz/" target="_blank" rel="noopener">
+      <img src="images/ThePaintersHubNTM.jpg" alt="Project 5">
+      <div class="portfolio-overlay">
+      <span class="portfolio-title">The Painters Hub</span>
+      <svg class="link-icon" viewBox="0 0 24 24">
+        <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
+      </svg>
+    </div>
+    </a>
+    <a class="portfolio-card" href="https://www.matol.co.nz/" target="_blank" rel="noopener">
+      <img src="images/matol.jpg" alt="Matol">
+      <div class="portfolio-overlay">
+      <span class="portfolio-title">Matol</span>
+      <svg class="link-icon" viewBox="0 0 24 24">
+        <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
+      </svg>
+    </div>
+    </a>
+    <a class="portfolio-card" href="https://www.unokitchens.co.nz/" target="_blank" rel="noopener">
+      <img src="images/Uno-Kitchens.jpg" alt="Uno Kitchens">
+      <div class="portfolio-overlay">
+      <span class="portfolio-title">Uno Kitchens</span>
+      <svg class="link-icon" viewBox="0 0 24 24">
+        <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
+      </svg>
+    </div>
+    </a>
+    
   </div>
 </section>
 
 
-
 <!-- CREATIVE LAB / OTHER PROJECTS -->
-<section id="creative-projects" class="creative-projects">
-  <div class="wrap">
-    <div class="section-header">
-      <h2>Other Projects</h2>
-      <p>Games, creative coding experiments, and interactive digital art.</p>
+<section id="projects" class="portfolio-section">
+  <h2 class="portfolio-header">CREATIVE LAB</h2>
+  <p>Games</p>
+  <div class="portfolio-divider"></div>
+  <div class="project-columns">
+    <div class="column">
+      <div class="project-block">
+        <img src="images/neocense2.jpg" alt="Project 1">
+        <h3>Creative Works</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project-block">
+        <img src="images/pineMelon.gif" alt="Project 2">
+        <h3>Website Designs</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      <div class="project-block">
+        <img src="" alt="Project 3">
+        <h3>Product Mockups</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+      </div>
     </div>
 
-    <div class="creative-grid">
-      <!-- Row 1: Portrait | Landscape -->
-      <article class="creative-card portrait" data-delay="0">
-        <img src="images/neocense2.jpg" alt="Retro Runner">
-        <div class="creative-info">
-          <h3>Retro Runner</h3>
-          <p>A pixel-art endless runner built in Unity.</p>
-          <a href="https://example.com" target="_blank" class="link">View Project →</a>
-        </div>
-      </article>
-
-      <article class="creative-card landscape" data-delay="120">
-        <img src="images/pingPong.jpg" alt="Particle Flow">
-        <div class="creative-info">
-          <h3>Particle Flow</h3>
-          <p>Generative art using p5.js and noise fields.</p>
-          <a href="https://example.com" target="_blank" class="link">View Project →</a>
-        </div>
-      </article>
-
-      <!-- Row 2: Landscape | Portrait -->
-      <article class="creative-card landscape" data-delay="0">
-        <img src="images/vr-scene-landscape.jpg" alt="Eco VR">
-        <div class="creative-info">
-          <h3>Eco VR</h3>
-          <p>Immersive conservation experience in VR.</p>
-          <a href="https://example.com" target="_blank" class="link">View Project →</a>
-        </div>
-      </article>
-
-      <article class="creative-card portrait" data-delay="120">
-        <img src="images/pineMelon.gif" alt="Neon Bloom">
-        <div class="creative-info">
-          <h3>Neon Bloom</h3>
-          <p>Reactive LED installation coded in Arduino.</p>
-          <a href="https://example.com" target="_blank" class="link">View Project →</a>
-        </div>
-      </article>
-
-      <!-- Row 3: Portrait | Landscape -->
-      <article class="creative-card portrait" data-delay="0">
-        <img src="images/oneWayWellington.jpg" alt="Sound Grid">
-        <div class="creative-info">
-          <h3>Sound Grid</h3>
-          <p>Audio-visual system syncing music and light.</p>
-          <a href="https://example.com" target="_blank" class="link">View Project →</a>
-        </div>
-      </article>
-
-      <article class="creative-card landscape" data-delay="120">
-        <img src="images/pineMelon.gif" alt="3D Data Canvas">
-        <div class="creative-info">
-          <h3>3D Data Canvas</h3>
-          <p>WebGL visualization linking environment & data.</p>
-          <a href="https://example.com" target="_blank" class="link">View Project →</a>
-        </div>
-      </article>
+    <div class="column">
+      <div class="project-block">
+        <img src="images/pineMelon.gif" alt="Project 4">
+        <h3>New Graphics</h3>
+        <p>Velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="project-block">
+        <img src="images/neocense2.jpg" alt="Project 5">
+        <h3>Office Walls</h3>
+        <p>Excepteur sint occaecat cupidatat non proident.</p>
+      </div>
+      <div class="project-block">
+        <img src="https://picsum.photos/500/450?random=16" alt="Project 6">
+        <h3>Other Designs</h3>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -275,7 +297,7 @@
     <h3>Let’s build something</h3>
     <p>
       Available for freelance & contract work — 
-      <a href="mailto:hello@tylermcluckie.com">hello@tylermcluckie.com</a>
+      <a href="mailto:ntmcluckie@gmail.com">Email Here ></a>
     </p>
 
     <div class="socials">
@@ -301,6 +323,6 @@
 </footer>
 
 
-  <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
