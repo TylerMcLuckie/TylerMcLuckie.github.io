@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Tyler Mc Luckie — NTM Portfolio</title>
   <meta name="description" content="Tyler Mc Luckie — Creative Web & UX / Developer / Data analytics" />
+  <link rel="icon" type="image/png" href="images/Cube-logo-fav32.png">
+  <link rel="apple-touch-icon" href="images/Cube-logo-fav32.png">
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
 </head>
-<body>
+<body id="top">
   <header class="site-header" role="banner">
     <div class="wrap header-inner">
       <a class="logo" href="#top"><img src="images/Cube-logo.png" alt="Tyler Mc Luckie" /></a>
@@ -25,13 +27,13 @@
       <a href="#contact" class="cta">Contact</a>
 
       <div class="social-nav">
-        <a href="https://www.linkedin.com/in/tylermcluckie" target="_blank" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/tyler-mc-luckie-69b1a0108/" target="_blank" aria-label="LinkedIn">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.761 0 5-2.238 5-5v-14c0-2.761-2.239-5-5-5zm-11.769 20h-2.732v-8.978h2.732v8.978zm-1.366-10.208c-.875 0-1.584-.709-1.584-1.584s.709-1.584 1.584-1.584 1.584.709 1.584 1.584-.709 1.584-1.584 1.584zm12.135 10.208h-2.732v-4.421c0-1.054-.02-2.413-1.471-2.413-1.472 0-1.698 1.149-1.698 2.335v4.499h-2.732v-8.978h2.622v1.228h.037c.366-.692 1.259-1.421 2.591-1.421 2.771 0 3.282 1.824 3.282 4.196v4.975z"/>
           </svg>
         </a>
 
-        <a href="https://vimeo.com/tylermcluckie" target="_blank" aria-label="Vimeo">
+        <a href="https://vimeo.com/user85205266" target="_blank" aria-label="Vimeo">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
             <path d="M22.522 6.189c-.098 2.142-1.588 5.069-4.474 8.79-2.983 3.841-5.5 5.761-7.548 5.761-1.273 0-2.35-1.173-3.229-3.521l-1.755-6.442c-.651-2.36-1.346-3.541-2.086-3.541-.163 0-.735.347-1.713 1.043l-1.026-1.338c1.08-.95 2.147-1.897 3.206-2.847 1.449-1.26 2.533-1.921 3.246-1.983 1.705-.163 2.757 1.002 3.154 3.497.426 2.693.721 4.373.882 5.04.492 2.236 1.033 3.353 1.626 3.353.458 0 1.149-.729 2.07-2.188.921-1.46 1.414-2.574 1.481-3.344.132-1.26-.363-1.888-1.481-1.888-.528 0-1.072.118-1.635.352 1.087-3.564 3.166-5.294 6.237-5.187 2.272.068 3.338 1.53 3.181 4.379z"/>
           </svg>
@@ -41,13 +43,16 @@
 
   </header>
 
+
+<!--hero-->
  <section id="hero" class="hero">
+  <canvas id="particle-canvas"></canvas>
   <div class="wrap hero-grid">
     
     <!-- LEFT: Text -->
     <div class="hero-copy">
-      <h1 class="hero-title">Creative Designer<br><span class="accent">Developer & Data Thinker</span></h1>
-      <p class="hero-sub">Crafting digital experiences that balance creativity, technology, and measurable impact.</p>
+      <h1 class="hero-title">Creative<br><span class="accent">Developer.</span></h1>
+        <h2 class="hero-sub">I design what people see.<br><span class="accent">I build what businesses need.</span></h2>
       
       <div class="hero-cta-wrap">
         <a href="#work" class="btn primary">View Projects</a>
@@ -58,88 +63,81 @@
     <!-- RIGHT: Layered Assets -->
     <div class="hero-layers" id="hero-layers">
       <!-- replace each with your own image asset -->
-      <img src="images/work-station.png" class="layer layer-1" alt="">
-      <img src="images/design-tools.png" class="layer layer-2" alt="">
-      <img src="images/game-controller.png" class="layer layer-3" alt="">
-      <img src="images/@.png" class="layer layer-4" alt="">
-      <img src="assets/layers/layer5.png" class="layer layer-5" alt="">
+      <img src="images/work-station-1800x1500.png" class="layer layer-1" alt="">
+      <img src="images/tm-1800x1500.png" class="layer layer-2" alt="">
+      <img src="images/game-controller-1800-x1500.png" class="layer layer-3" alt="">
+      <img src="images/@1800-x1500.png" class="layer layer-4" alt="">
+      <img src="images/design-tools-1800x1500.png" class="layer layer-5" alt="">
     </div>
 
   </div>
 </section>
 
     <!-- ABOUT -->
-    <section id="about" class="section wrap">
-      <div class="about-grid">
-        <div class="portrait">
-          <img src="images/Cube-logo.png" alt="Portrait">
+    
+<section id="about" class="about-section">
+  <div class="section-eye">Who I am</div>
+  <div class="about-grid">
+
+    <!-- ── LEFT: copy + process ── -->
+    <div class="about-left">
+      <div class="about-tag">Tyler Mc Luckie</div>
+      <h2 class="about-role">
+        Creative Developer.<br>
+        Web. Systems. 3D.<br>
+        <span>Let's build.</span>
+      </h2>
+      <div class="about-body">
+       <p>I'm a creative developer based in Wellington, NZ.</p>
+          <p>I build websites, connect business systems, and create digital experiences that solve real problems. From WordPress and Shopify builds to CRM integrations and data-driven reporting, I help businesses run smarter.</p>
+          <p>My background in creative technology and game development shapes how I approach every project, thinking in systems, interactions, and outcomes rather than just deliverables.</p>
+          <p>I'm currently building toward 3D web experiences, AI-powered workflows, data visualisation tools, and immersive training applications, where game engine technology meets real business problems.</p>
+          <p>Let's build something useful together.</p>
+      </div>
+
+      <!-- PROCESS TILES under copy -->
+      <div class="process-tiles">
+        <div class="ptile">
+          <div class="pt-body">
+            <div class="pt-title">Discover</div>
+            <div class="pt-items"><span>Research</span><span>Ideation</span><span>Strategy</span></div>
+          </div>
         </div>
-        <div class="about-copy">
-          <p>Welcome, I’m Tyler <br>
-
-            <p>Designer. Developer. Data Thinker.</p>
-
-            I create digital experiences that balance creativity with measurable performance, where design, data, and technology work together with purpose. With a background in Creative Technology and Game Development, I approach projects with both a creative eye and a systems mindset, blending design thinking, technical craft, and data insight.
-
-            Over the past few years, my focus has been on design and development, along with SEO, SEM, and analytics. I enjoy creating websites that not only look and feel right but also perform, grounded in data, usability, and genuine audience insight.
-
-            I regularly work with AI tools and data analytics to improve efficiency, uncover trends, and inform design decisions. My current goal is to deepen my skills in business intelligence, strengthening the link between creative work and measurable outcomes.
-
-            I see the digital world as an evolving ecosystem, where creativity and data inform one another, and where meaningful design is backed by understanding, adaptability, and purpose.</p>
-          <p>Skills: Designer · Developer · HTML/CSS · UX & Interaction Design · SEO/SEM · Data Analytics · AI Tools · Reporting & Insights · Unity Prototyping · Motion & Microinteractions</p>
+        <div class="ptile">
+          <div class="pt-body">
+            <div class="pt-title">Develop</div>
+            <div class="pt-items"><span>UI/UX</span><span>Prototyping</span><span>Visual Design</span><span>3D</span></div>
+          </div>
+        </div>
+        <div class="ptile">
+          <div class="pt-body">
+            <div class="pt-title">Deploy</div>
+            <div class="pt-items"><span>Development</span><span>Testing</span><span>Automation</span><span>Analytics</span></div>
+          </div>
         </div>
       </div>
-      <section class="process-section">
-  <div class="wrap">
-    <div class="process-grid">
+    </div>
 
-      <div class="process-tile">
-        <h3>DISCOVER</h3>
-        <ul>
-          <li>Research</li>
-          <li>Ideation</li>
-          <li>Strategy</li>
-        </ul>
+    <!-- ── RIGHT: globe + skill pills ── -->
+    <div class="about-right">
+
+      <div class="globe-outer" id="globeWrap">
+        <canvas id="globe-canvas"></canvas>
+        <div class="globe-hint">Hover a skill · Drag to rotate</div>
       </div>
 
-      <div class="process-tile">
-        <h3>DESIGN</h3>
-        <ul>
-          <li>UI / UX</li>
-          <li>Prototyping</li>
-          <li>Visual Design</li>
-          <li>Animatics</li>
-        </ul>
-      </div>
-
-      <div class="process-tile">
-        <h3>DEPLOY</h3>
-        <ul>
-          <li>Development</li>
-          <li>Testing</li>
-          <li>UX Research</li>
-          <li>Amend</li>
-        </ul>
+      <!-- LEGEND — category dots only -->
+      <div class="globe-legend">
+        <div class="legend-item"><span class="ldot" style="background:#4488ff"></span>Web</div>
+        <div class="legend-item"><span class="ldot" style="background:#00ddaa"></span>Data</div>
+        <div class="legend-item"><span class="ldot" style="background:#ff3131"></span>AI</div>
+        <div class="legend-item"><span class="ldot" style="background:#aa44ff"></span>3D</div>
+        <div class="legend-item"><span class="ldot" style="background:#ff8844"></span>Design</div>
       </div>
 
     </div>
   </div>
-<!-- TOOLS & TECH ICONS -->
-<!--<div class="tools-icons">
-  <img src="images/html-icon.jpg" alt="HTML5">
-  <img src="images/css-logo.jpg" alt="CSS3">
-  <img src="images/css-logo.jpg" alt="WordPress">
-  <img src="images/shopify.jpg" alt="Shopify">
-  <img src="images/adobesuite-icon.jpg" alt="Adobe Suite">
-  <img src="images/github.jpg" alt="Git">
-  <img src="images/VS-logo.jpg" alt="VS Code">
-  <img src="images/Unity.jpg" alt="Unity">
-  <img src="assets/icons/python.svg" alt="Python">
-</div>-->     
-
-
 </section>
-    </section>
 
 
 <!-- PORTFOLIO (primary grid) -->
@@ -247,42 +245,46 @@
 <!-- CREATIVE LAB / OTHER PROJECTS -->
 <section id="projects" class="portfolio-section">
   <h2 class="portfolio-header">CREATIVE LAB</h2>
-  <p>Games</p>
   <div class="portfolio-divider"></div>
   <div class="project-columns">
     <div class="column">
       <div class="project-block">
         <img src="images/neocense2.jpg" alt="Project 1">
-        <h3>Creative Works</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3>Neocense - 2D Isometric Puzzle Game</h3>
+        <p>Capstone Project .
+Nine students. One published game. UX research that turned real player behaviour into design decisions. Bronze — Best Design Awards. Pav Awards nominated for Accessibility and Representation Excellence.</p>
+       <a href="https://store.steampowered.com/app/1566580/Neocense/" target="_blank" rel="noopener" style="display:inline-block;margin:0 20px 20px;font-size:12px;font-weight:600;color:#ff2c2c;letter-spacing:.04em;text-transform:uppercase;">Play on Steam →</a>
+    </div>
+      <div class="project-block">
+        <img src="images/Avatar_Generator.png" alt="Project 2">
+        <h3>Avatar Generator</h3>
+        <p>Procedural avatar generation built with Processing and Python. Algorithmically composited from randomised layers. Proof that <code>for i in range</code> can make something beautiful.</p>
+        <a href="https://github.com/TylerMcLuckie/processing.py---Avatar-Generator/tree/main/Avatar_Generator" target="_blank" rel="noopener" style="display:inline-block;margin:0 20px 20px;font-size:12px;font-weight:600;color:#ff2c2c;letter-spacing:.04em;text-transform:uppercase;">View on GitHub →</a>
       </div>
       <div class="project-block">
-        <img src="images/pineMelon.gif" alt="Project 2">
-        <h3>Website Designs</h3>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
-      <div class="project-block">
-        <img src="" alt="Project 3">
-        <h3>Product Mockups</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+        <img src="images/pineMelon.gif" alt="Project 3">
+        <h3>PineMelon Ranch</h3>
+        <p>2D sim and tower defence game. UX research and minimap UI design, my first taste of translating player feedback into interface decisions.</p>
       </div>
     </div>
 
     <div class="column">
       <div class="project-block">
-        <img src="images/pineMelon.gif" alt="Project 4">
-        <h3>New Graphics</h3>
-        <p>Velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <img src="images/pingPong.jpg" alt="Project 4">
+        <h3>Neural Pong</h3>
+        <p>Machine learning research project. A neural network trained to play Pong, exploring reinforcement learning and AI decision making in a game environment.</p>
+         <a href="https://vimeo.com/429923533" target="_blank" rel="noopener" style="display:inline-block;margin:0 20px 20px;font-size:12px;font-weight:600;color:#ff2c2c;letter-spacing:.04em;text-transform:uppercase;">Watch on Vimeo →</a>
       </div>
       <div class="project-block">
-        <img src="images/neocense2.jpg" alt="Project 5">
-        <h3>Office Walls</h3>
-        <p>Excepteur sint occaecat cupidatat non proident.</p>
+        <img src="images/oneWayWellington.jpg" alt="Project 5">
+        <h3>One Way Wellington</h3>
+        <p>Assistant Producer on a 2D game commissioned by Wellington's economic development agency WREDA. Organised and facilitated a series of playtesting events — turning real player behaviour into design decisions.</p>
+        <a href="https://exposure2019.massey.ac.nz/students/creative-media-production/louis-earl" target="_blank" rel="noopener" style="display:inline-block;margin:0 20px 20px;font-size:12px;font-weight:600;color:#ff2c2c;letter-spacing:.04em;text-transform:uppercase;">View Project →</a>
       </div>
       <div class="project-block">
-        <img src="https://picsum.photos/500/450?random=16" alt="Project 6">
-        <h3>Other Designs</h3>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <img src="images/oceanaid.jpg" alt="Project 6">
+        <h3>Ocean Aid Experience</h3>
+        <p>Projection mapping audiovisual installation raising awareness of ocean pollution. An immersive call to action, where creative technology meets environmental advocacy.</p>
       </div>
     </div>
   </div>
@@ -291,21 +293,22 @@
 
 
 <!-- CONTACT -->
+<!-- ══ CONTACT (dark, with layers) ══════ -->
 <section id="contact" class="contact-section">
   <div class="wrap contact-inner">
   <div class="contact-text">
-    <h3>Let’s build something</h3>
+    <h3>Let's build something useful together.</h3>
     <p>
-      Available for freelance & contract work — 
-      <a href="mailto:ntmcluckie@gmail.com">Email Here ></a>
+      Available for freelance & contract work
+      <a href="mailto:studio@ntmdigital.co">Email Here ></a>
     </p>
 
     <div class="socials">
-      <a href="https://www.linkedin.com/in/tylermcluckie" target="_blank" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/tyler-mc-luckie-69b1a0108/" target="_blank" aria-label="LinkedIn">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.761 0 5-2.238 5-5v-14c0-2.761-2.239-5-5-5zm-11.769 20h-2.732v-8.978h2.732v8.978zm-1.366-10.208c-.875 0-1.584-.709-1.584-1.584s.709-1.584 1.584-1.584 1.584.709 1.584 1.584-.709 1.584-1.584 1.584zm12.135 10.208h-2.732v-4.421c0-1.054-.02-2.413-1.471-2.413-1.472 0-1.698 1.149-1.698 2.335v4.499h-2.732v-8.978h2.622v1.228h.037c.366-.692 1.259-1.421 2.591-1.421 2.771 0 3.282 1.824 3.282 4.196v4.975z"/></svg>
       </a>
 
-      <a href="https://vimeo.com/tylermcluckie" target="_blank" aria-label="Vimeo">
+      <a href="https://vimeo.com/user85205266" target="_blank" aria-label="Vimeo">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M22.522 6.189c-.098 2.142-1.588 5.069-4.474 8.79-2.983 3.841-5.5 5.761-7.548 5.761-1.273 0-2.35-1.173-3.229-3.521l-1.755-6.442c-.651-2.36-1.346-3.541-2.086-3.541-.163 0-.735.347-1.713 1.043l-1.026-1.338c1.08-.95 2.147-1.897 3.206-2.847 1.449-1.26 2.533-1.921 3.246-1.983 1.705-.163 2.757 1.002 3.154 3.497.426 2.693.721 4.373.882 5.04.492 2.236 1.033 3.353 1.626 3.353.458 0 1.149-.729 2.07-2.188.921-1.46 1.414-2.574 1.481-3.344.132-1.26-.363-1.888-1.481-1.888-.528 0-1.072.118-1.635.352 1.087-3.564 3.166-5.294 6.237-5.187 2.272.068 3.338 1.53 3.181 4.379z"/></svg>
       </a>
     </div>
@@ -318,11 +321,12 @@
   </div>
 </section>
 
-<footer class="site-footer wrap">
-  © <span id="year"></span> Tyler Mc Luckie
+<footer>
+  <span>© <span id="yr"></span> Tyler Mc Luckie</span>
+  <span>Creative Designer · Developer · Data Thinker</span>
 </footer>
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="main.js"></script>
 </body>
+
 </html>
