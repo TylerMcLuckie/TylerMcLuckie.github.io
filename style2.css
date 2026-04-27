@@ -155,7 +155,7 @@ body{
 
 @media (max-width: 800px) {
   .hero {
-    padding-top: 14vh;
+    padding-top: 16vh;
     padding-bottom: 10vh;
   }
 }
@@ -885,8 +885,7 @@ footer{background:rgba(12,8,18,0.95);border-top:1px solid var(--border);padding:
 /* Responsive */
 @media (max-width: 900px) {
   .contact-inner { flex-direction: column; text-align: center; }
-  .contact-layers { order: -1; height: 260px; }
-  .contact-layers img { max-width: 220px; }
+  .contact-layers { display: none; }
 }
 
 
